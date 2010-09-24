@@ -15,18 +15,23 @@ public class Processing {
 	
 		Processing ps = new Processing();
 		
-//		ps.parseFile1("D:/m2w cs/datatable/input/reynard_sesions02-25",
-//					"D:/m2w cs/datatable/output/reynard_sesions02-25_result_1");
+//		ps.parseFile1("D:/m2w cs/evaltable/input/reynard_sessions",
+//					"D:/m2w cs/evaltable/output/reynard_sessions_result_1");
+//		
+//		ps.parseFile2("D:/m2w cs/evaltable/output/reynard_sessions_result_1",
+//						"D:/m2w cs/evaltable/output/reynard_sessions_result_2");
 		
-//		ps.parseFile2("D:/m2w cs/datatable/output/reynard_sesions02-25_result_1",
-//						"D:/m2w cs/datatable/output/reynard_sesions02-25_result_2");
-		
-//		ps.parseFile3("D:/m2w cs/datatable/output/reynard_sesions02-25_result_3",
-//						"D:/m2w cs/datatable/output/reynard_sesions02-25_result_4");
-		
-		ps.parseSeFile("se02");
-		
-
+//		ps.parseFile3("D:/m2w cs/evaltable/output/reynard_sessions_result_2",
+//						"D:/m2w cs/evaltable/output/reynard_sessions_result_3");
+//			
+//		for (int i = 1; i < 50; i ++){
+//			if(i < 10){
+//				ps.parseSeFile("reynard_sesions02-25_session0" + i);
+//			}else{
+//			ps.parseSeFile("reynard_sesions02-25_session" + i);
+//			}
+//		}
+		ps.parseSeFile("reynard_sesions02-25_session50");
 	}
 	
 	public void parseFile1(String input, String output){
@@ -290,7 +295,7 @@ public class Processing {
 	public void parseFile3(String input, String output){
 		HashMap<String, String> seMap = new HashMap<String, String>();
 		ArrayList<String> newfileList = new ArrayList<String>();
-//		ArrayList<ArrayList<String>> secSeList = new ArrayList<ArrayList<String>>();
+		ArrayList<ArrayList<String>> secSeList = new ArrayList<ArrayList<String>>();
 		
 		try {	
 			
@@ -320,19 +325,19 @@ public class Processing {
 //				System.out.println("3");
 				BufferedReader br = new BufferedReader(new FileReader(input));
 				String tempStr = null;
-//				ArrayList<String> tempList = new ArrayList<String>();
+				ArrayList<String> tempList = new ArrayList<String>();
 				
 				while((tempStr = br.readLine()) != null ) {
 					if(tempStr != null && tempStr.contains("!")){
 						String tempSe = tempStr.split("!")[5];
 						if (tempSe.equals(seList.get(i))){
 							newfileList.add(tempStr);
-//							tempList.add(tempStr);// strings according to ses.
+							tempList.add(tempStr);// strings according to ses.
 //							System.out.println(tempStr);
 							}
 					}
 				}
-				
+				secSeList.add(tempList);
 				br.close();
 			}
 			for (int i = 0; i < newfileList.size(); i ++){
@@ -341,17 +346,18 @@ public class Processing {
 			}
 			sepw.close();
 			
-//			System.out.println(secSeList.size());
+			System.out.println(secSeList.size());
 			
-//			for (int i = 0; i < secSeList.size(); i ++){
-//				System.out.println(secSeList.get(i).get(0));
-//				String curSe = secSeList.get(i).get(0).split("!")[5];
-//				PrintWriter secSepw = new PrintWriter("D:/m2w cs/datatable/output2/reynard_sesions02-25_" + curSe);
-//				for (int j = 0; j < secSeList.get(i).size(); j ++){
-//					secSepw.println(secSeList.get(i).get(j));
-//				}
-//				secSepw.close();
-//			}
+			
+			for (int i = 0; i < secSeList.size(); i ++){
+				System.out.println(secSeList.get(i).get(0));
+				String curSe = secSeList.get(i).get(0).split("!")[5];
+				PrintWriter secSepw = new PrintWriter("D:/m2w cs/evaltable/output2/reynard_sesions02-25_" + curSe);
+				for (int j = 0; j < secSeList.get(i).size(); j ++){
+					secSepw.println(secSeList.get(i).get(j));
+				}
+				secSepw.close();
+			}
 			
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -366,8 +372,8 @@ public class Processing {
 	
 	public void parseSeFile(String se){
 		
-		String input = "D:/m2w cs/datatable/output2/" + se;
-		String output = "D:/m2w cs/datatable/output2/table_" + se;
+		String input = "D:/m2w cs/evaltable/output2/" + se;
+		String output = "D:/m2w cs/evaltable/output2/table_" + se;
 		
 		HashMap<String, String> nameMap = new HashMap<String, String>();
 				
@@ -376,9 +382,10 @@ public class Processing {
 			BufferedReader namebr = new BufferedReader(new FileReader(input));
 			String nameStr = null;
 			ArrayList<String> nameList = new ArrayList<String>();
-			ArrayList<String> fileList = new ArrayList<String>();
+			ArrayList<ArrayList<String>> fileList = new ArrayList<ArrayList<String>>();
 			
-			/*get name list*/
+			
+			/*1.get name list*/
 			while((nameStr = namebr.readLine()) != null ) {
 				
 				if(nameStr != null && nameStr.contains("!")){
@@ -388,29 +395,78 @@ public class Processing {
 			}
 			namebr.close();
 			Object[] nameOb = nameMap.keySet().toArray();
+			
 			for (int i = 0; i < nameOb.length ; i ++){
 				nameList.add(nameOb[i].toString());
 				System.out.println(nameList.get(i));
 			}
 			
-			/*output table*/
+			/*2.output table*/
+			PrintWriter pw = new PrintWriter(output);
+			
+			/*2.1 get fileList with names in sublist*/
 			for (int i = 0; i < nameList.size(); i ++){
 				BufferedReader br = new BufferedReader(new FileReader(input));
 				String tempStr = null;
-								
+				ArrayList<String> subList = new ArrayList<String>();
+				
 				while((tempStr = br.readLine()) != null ) {
 					if(tempStr != null && tempStr.contains("!")){
 						String tempName = tempStr.split("!")[0];
+						
 						if (tempName.equals(nameList.get(i))){
-							fileList.add(tempStr);
-							}
+							subList.add(tempStr);
+
+						}
 					}
 				}
-						
+				
+				fileList.add(subList);
 				br.close();
 			}
 			
-		
+			/*2.2 print file*/
+			
+			System.out.println(fileList.get(0).get(0));
+			
+			ArrayList<ArrayList<String>> _taList = new ArrayList<ArrayList<String>>();
+			ArrayList<ArrayList<String>> _scoreList = new ArrayList<ArrayList<String>>();
+			
+			for (int i = 0; i < fileList.size(); i ++){
+				/*print topic & cat*/
+				ArrayList<String> taList = new ArrayList<String>();
+				ArrayList<String> scoreList = new ArrayList<String>();
+					
+				for(int j = 0; j < fileList.get(i).size(); j++){					
+					String tempStr = fileList.get(i).get(j);
+					taList.add("[" + tempStr.split("!")[3] + "-" + tempStr.split("!")[4] + "]\t");
+					scoreList.add(tempStr.split("!")[1] + "\t" + tempStr.split("!")[2]);
+				}
+				_taList.add(taList);
+				_scoreList.add(scoreList);
+			}
+			
+				/*print 1st line*/
+			pw.print("name\t"); 
+			for (int k = 0; k < _taList.get(0).size(); k++){
+					pw.print(_taList.get(0).get(k) + "\t");
+				}
+			pw.println();
+				
+				/*print 2nd line*/
+			for (int i = 0; i < _scoreList.size(); i++){
+				String curName = fileList.get(i).get(0).split("!")[0];	
+				pw.print(curName + "\t");
+				for (int k = 0; k < _scoreList.get(i).size(); k++){
+					pw.print(_scoreList.get(i).get(k) + "\t");
+				}
+				pw.println();
+				
+				}
+			
+			
+			pw.close();
+			
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
