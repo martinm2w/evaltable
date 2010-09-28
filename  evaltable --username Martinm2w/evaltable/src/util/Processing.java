@@ -15,23 +15,23 @@ public class Processing {
 	
 		Processing ps = new Processing();
 		
-//		ps.parseFile1("D:/m2w cs/evaltable/input/reynard_sessions",
-//					"D:/m2w cs/evaltable/output/reynard_sessions_result_1");
+//		ps.parseFile1("D:/m2w cs/evaltable/input/reynard_sessions(2)",
+//					"D:/m2w cs/evaltable/output/reynard_sessions(2)_result_1");
 //		
-//		ps.parseFile2("D:/m2w cs/evaltable/output/reynard_sessions_result_1",
-//						"D:/m2w cs/evaltable/output/reynard_sessions_result_2");
+//		ps.parseFile2("D:/m2w cs/evaltable/output/reynard_sessions(2)_result_1",
+//						"D:/m2w cs/evaltable/output/reynard_sessions(2)_result_2");
 		
-//		ps.parseFile3("D:/m2w cs/evaltable/output/reynard_sessions_result_2",
-//						"D:/m2w cs/evaltable/output/reynard_sessions_result_3");
+//		ps.parseFile3("D:/m2w cs/evaltable/output/reynard_sessions(2)_result_2",
+//						"D:/m2w cs/evaltable/output/reynard_sessions(2)_result_3");
 //			
-//		for (int i = 1; i < 50; i ++){
-//			if(i < 10){
-//				ps.parseSeFile("reynard_sesions02-25_session0" + i);
-//			}else{
-//			ps.parseSeFile("reynard_sesions02-25_session" + i);
-//			}
-//		}
-		ps.parseSeFile("reynard_sesions02-25_session50");
+		for (int i = 1; i < 50; i ++){
+			if(i < 10){
+				ps.parseSeFile("reynard_sessions(2)_session0" + i);
+			}else{
+			ps.parseSeFile("reynard_sessions(2)_session" + i);
+			}
+		}
+		ps.parseSeFile("reynard_sessions(2)_session50");
 	}
 	
 	public void parseFile1(String input, String output){
@@ -352,7 +352,7 @@ public class Processing {
 			for (int i = 0; i < secSeList.size(); i ++){
 				System.out.println(secSeList.get(i).get(0));
 				String curSe = secSeList.get(i).get(0).split("!")[5];
-				PrintWriter secSepw = new PrintWriter("D:/m2w cs/evaltable/output2/reynard_sesions02-25_" + curSe);
+				PrintWriter secSepw = new PrintWriter("D:/m2w cs/evaltable/output2/reynard_sessions(2)_" + curSe);
 				for (int j = 0; j < secSeList.get(i).size(); j ++){
 					secSepw.println(secSeList.get(i).get(j));
 				}
