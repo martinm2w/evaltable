@@ -1,0 +1,1354 @@
+tools/jdk1.6.0_03/bin/java -Xmx1024m -Xmn768m -Xss2048k -classpath /home/m2w/develop/NLLIB/:tools/xml_parser/resolver.jar:tools/xml_parser/serializer.jar:tools/xml_parser/xercesImpl.jar:tools/xml_parser/xercesSamples.jar:tools/xml_parser/xml-apis.jar:tools/commons-math-2.0.jar:{tools/report_lib/jsr173_1.0_api.jar:tools/report_lib/xmlpublic.jar:tools/report_lib/xmlbeans-qname.jar:tools/report_lib/xbean.jar:tools/report_lib/resolver.jar:tools/report_lib/ptsReport.jar:tools/report_lib/xbean_xpath.jar}:tools/jwnl1.3/jwnl.jar:tools/jwnl1.3/commons-logging.jar:/source.jar:/xerces.jar:tools/stanford-postagger.jar:tools/weka/weka.jar edu.albany.ils.dsarmd0100.lu.Assertions /home/m2w/develop/NLTEST/DSARMD0100/English_V2
+Preparing...
+loading Feb19_GroupA.txt...
+loading Feb28_GroupA.txt...
+loading Feb28_GroupB.txt...
+loading Mar07_GroupA.txt...
+done load features
+done load features
+done load features
+done load features
+done load features
+done load features
+done load features
+done load features
+***************
+Local topic: chicago
+ID: 21
+Speaker: JD
+ref: -1
+
+TurnNo: 23
+---Subsequent Mentions---
+24
+31
+32
+120
+152
+161
+199
+199
+202
+205
+241
+247
+249
+251
+251
+266
+312
+375
+376
+414
+417
+420
+431
+435
+436
+458
+461
+462
+465
+479
+497
+500
+502
+503
+518
+522
+522
+559
+564
+580
+581
+582
+589
+592
+593
+599
+619
+621
+653
+654
+669
+689
+713
+739
+762
+765
+774
+799
+850
+855
+
+***************
+Local topic: louis
+ID: 26
+Speaker: KI
+ref: -1
+
+TurnNo: 25
+---Subsequent Mentions---
+58
+62
+161
+168
+212
+214
+217
+226
+228
+266
+306
+308
+310
+312
+317
+323
+328
+340
+346
+346
+346
+347
+375
+375
+416
+420
+435
+459
+472
+479
+493
+497
+505
+513
+514
+555
+557
+558
+572
+584
+591
+604
+611
+613
+641
+665
+689
+700
+700
+725
+733
+744
+799
+812
+813
+814
+852
+
+***************
+Local topic: olympics
+ID: 16
+Speaker: JR
+ref: -1
+
+TurnNo: 19
+---Subsequent Mentions---
+24
+60
+61
+63
+108
+108
+148
+148
+149
+149
+156
+174
+306
+481
+482
+482
+526
+530
+571
+605
+726
+791
+792
+794
+
+***************
+Local topic: city
+ID: 13
+Speaker: JR
+ref: -1
+
+TurnNo: 19
+---Subsequent Mentions---
+22
+22
+37
+51
+55
+59
+60
+76
+157
+208
+211
+211
+222
+222
+320
+375
+571
+621
+643
+732
+739
+745
+787
+
+***************
+Local topic: people
+ID: 194
+Speaker: JD
+ref: -1
+
+TurnNo: 134
+---Subsequent Mentions---
+158
+194
+223
+227
+252
+252
+254
+255
+283
+325
+326
+327
+362
+369
+399
+570
+604
+609
+611
+611
+733
+
+***************
+Local topic: time
+ID: 84
+Speaker: LI
+ref: -1
+
+TurnNo: 65
+---Subsequent Mentions---
+76
+77
+82
+84
+86
+87
+283
+287
+288
+288
+288
+292
+300
+301
+424
+666
+833
+867
+
+***************
+Local topic: point
+ID: 60
+Speaker: EA
+ref: -1
+
+TurnNo: 52
+---Subsequent Mentions---
+66
+110
+111
+149
+150
+274
+358
+370
+612
+670
+672
+685
+686
+687
+688
+
+***************
+Local topic: atlanta
+ID: 267
+Speaker: KI
+ref: -1
+
+TurnNo: 163
+---Subsequent Mentions---
+170
+171
+240
+245
+267
+269
+380
+408
+409
+804
+
+***************
+Local topic: facilities
+ID: 103
+Speaker: LI
+ref: -1
+
+TurnNo: 76
+---Subsequent Mentions---
+88
+93
+95
+96
+97
+97
+103
+108
+462
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+++++++++++++++++++++++++++++++++
+calculate Involvement - NPI quintile
+qt_thrs:  0.21764705882352942 0.17500000000000002 0.12205882352941178 0.05735294117647059 0.16911764705882354 0.08263008587939973
+The quintile score of JR is: 5 --- actual score: 0.25735294117647056
+The quintile score KI is: 4 --- actual score: 0.19117647058823528
+The quintile score LI is: 4 --- actual score: 0.17647058823529413
+The quintile score LA is: 3 --- actual score: 0.16911764705882354
+The quintile score EA is: 2 --- actual score: 0.11029411764705882
+The quintile score JD is: 2 --- actual score: 0.09558823529411764
+The quintile score ilspersonnel2 is: 1 --- actual score: 0.0
+
+++++++++++++++++++++++++++++++++
+calculate Involvement - TI quintile
+qt_thrs:  0.19089874857792946 0.18156996587030716 0.15426621160409557 0.07053469852104666 0.15699658703071673 0.06664717592744848
+The quintile score of LA is: 5 --- actual score: 0.19226393629124006
+The quintile score JR is: 4 --- actual score: 0.1899886234357224
+The quintile score KI is: 4 --- actual score: 0.18771331058020477
+The quintile score EA is: 3 --- actual score: 0.15699658703071673
+The quintile score LI is: 2 --- actual score: 0.15358361774744028
+The quintile score JD is: 2 --- actual score: 0.11376564277588168
+The quintile score ilspersonnel2 is: 1 --- actual score: 0.005688282138794084
+
+++++++++++++++++++++++++++++++++
+calculate Involvement - TCI quintile: [0.21774193548387097, 0.2056451612903226, 0.18548387096774194, 0.16129032258064516, 0.14112903225806453, 0.08870967741935484, 0.0]
+qt_thrs:  0.21048387096774196 0.18064516129032257 0.14516129032258066 0.053225806451612914 0.16129032258064516 0.07643078037733717
+The quintile score of JR is: 5 --- actual score: 0.21774193548387097
+The quintile score LI is: 4 --- actual score: 0.2056451612903226
+The quintile score KI is: 4 --- actual score: 0.18548387096774194
+The quintile score LA is: 3 --- actual score: 0.16129032258064516
+The quintile score EA is: 2 --- actual score: 0.14112903225806453
+The quintile score JD is: 2 --- actual score: 0.08870967741935484
+The quintile score ilspersonnel2 is: 1 --- actual score: 0.0
+
+++++++++++++++++++++++++++++++++
+calculate Involvement - ALLOTP quintile
+qt_thrs:  0.2027722772277228 0.16792079207920793 0.16316831683168317 0.047128712871287136 0.16633663366336635 0.0787231748776816
+The quintile score of JR is: 5 --- actual score: 0.2514851485148515
+The quintile score LA is: 4 --- actual score: 0.1702970297029703
+The quintile score LI is: 4 --- actual score: 0.16831683168316833
+The quintile score EA is: 3 --- actual score: 0.16633663366336635
+The quintile score KI is: 2 --- actual score: 0.16237623762376238
+The quintile score JD is: 2 --- actual score: 0.07326732673267326
+The quintile score ilspersonnel2 is: 1 --- actual score: 0.007920792079207921
+
+++++++++++++++++++++++++++++++++
+calculate Involvement - ASMI quintile
+qt_thrs:  0.21301059001512862 0.16580937972768534 0.14402420574886535 0.06051437216338881 0.14523449319213314 0.07601952235421637
+The quintile score of JR is: 5 --- actual score: 0.24659606656580937
+The quintile score LI is: 4 --- actual score: 0.19062027231467474
+The quintile score KI is: 4 --- actual score: 0.17095310136157338
+The quintile score LA is: 3 --- actual score: 0.14523449319213314
+The quintile score EA is: 2 --- actual score: 0.1437216338880484
+The quintile score JD is: 2 --- actual score: 0.09682299546142209
+The quintile score ilspersonnel2 is: 1 --- actual score: 0.006051437216338881
+++++++++++++++++++++++++++++++++
+calculate Merged quintile
+qt_thrs:  0.20077753614872013 0.1766699725563765 0.1484846178709933 0.05775130623676122 0.16764068576516244 0.07421225770843135
+The quintile score of JR is: 5 --- actual score: 0.23263294303534496
+The quintile score KI is: 4 --- actual score: 0.17954059822430354
+The quintile score LI is: 4 --- actual score: 0.17892729425418002
+The quintile score LA is: 3 --- actual score: 0.16764068576516244
+The quintile score EA is: 2 --- actual score: 0.14369560089745098
+The quintile score JD is: 2 --- actual score: 0.0936307755366899
+The quintile score ilspersonnel2 is: 1 --- actual score: 0.003932102286868177
+***************
+Local topic: jeremy
+ID: 111
+Speaker: JR
+ref: -1
+
+TurnNo: 82
+---Subsequent Mentions---
+87
+126
+128
+128
+130
+135
+138
+138
+138
+139
+139
+143
+153
+155
+157
+161
+171
+173
+180
+198
+201
+203
+222
+223
+225
+226
+230
+234
+235
+238
+261
+263
+264
+270
+277
+285
+291
+322
+356
+357
+358
+365
+365
+367
+368
+372
+372
+373
+373
+374
+405
+405
+405
+405
+405
+407
+412
+415
+416
+417
+419
+420
+493
+494
+495
+496
+501
+501
+506
+
+***************
+Local topic: natalie
+ID: 116
+Speaker: LA
+ref: -1
+
+TurnNo: 92
+---Subsequent Mentions---
+95
+95
+98
+99
+101
+102
+106
+108
+108
+109
+109
+111
+113
+115
+140
+140
+140
+141
+145
+148
+161
+205
+274
+275
+276
+277
+280
+282
+285
+286
+293
+293
+297
+322
+419
+476
+495
+506
+
+***************
+Local topic: megan
+ID: 22
+Speaker: LA
+ref: -1
+
+TurnNo: 19
+---Subsequent Mentions---
+20
+23
+24
+24
+25
+27
+29
+29
+31
+32
+33
+34
+35
+37
+41
+45
+48
+57
+57
+57
+209
+
+***************
+Local topic: job
+ID: 25
+Speaker: JF
+ref: -1
+
+TurnNo: 21
+---Subsequent Mentions---
+29
+57
+96
+111
+117
+138
+153
+163
+171
+312
+351
+352
+356
+357
+360
+361
+380
+410
+494
+
+***************
+Local topic: experience
+ID: 24
+Speaker: JF
+ref: -1
+
+TurnNo: 20
+---Subsequent Mentions---
+27
+67
+67
+80
+95
+143
+153
+191
+357
+
+***************
+Local topic: alex
+ID: 77
+Speaker: JR
+ref: -1
+
+TurnNo: 59
+---Subsequent Mentions---
+59
+61
+65
+66
+67
+72
+80
+82
+467
+
+***************
+Local topic: candidate
+ID: 66
+Speaker: LA
+ref: -1
+
+TurnNo: 52
+---Subsequent Mentions---
+90
+101
+112
+124
+201
+275
+376
+376
+
+***************
+Local topic: nursing
+ID: 252
+Speaker: JW
+ref: -1
+
+TurnNo: 171
+---Subsequent Mentions---
+221
+225
+231
+242
+351
+353
+360
+
+***************
+Local topic: brian
+ID: 279
+Speaker: LA
+ref: -1
+
+TurnNo: 203
+---Subsequent Mentions---
+234
+300
+302
+419
+470
+473
+473
+
+***************
+Local topic: plus
+ID: 82
+Speaker: JN
+ref: -1
+
+TurnNo: 62
+---Subsequent Mentions---
+131
+195
+224
+352
+352
+354
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+++++++++++++++++++++++++++++++++
+calculate Involvement - NPI quintile
+qt_thrs:  0.3016574585635359 0.17016574585635358 0.06850828729281767 0.03314917127071824 0.07734806629834254 0.12441896424967991
+The quintile score of LA is: 5 --- actual score: 0.3149171270718232
+The quintile score JR is: 4 --- actual score: 0.292817679558011
+The quintile score NE is: 4 --- actual score: 0.19337016574585636
+The quintile score JN is: 3 --- actual score: 0.07734806629834254
+The quintile score JF is: 2 --- actual score: 0.06629834254143646
+The quintile score JW is: 2 --- actual score: 0.055248618784530384
+The quintile score ilspersonnel is: 1 --- actual score: 0.0
+
+++++++++++++++++++++++++++++++++
+calculate Involvement - TI quintile
+qt_thrs:  0.2531791907514451 0.16146435452793834 0.09672447013487476 0.055876685934489405 0.11368015414258188 0.09408031860339806
+The quintile score of LA is: 5 --- actual score: 0.2947976878612717
+The quintile score NE is: 4 --- actual score: 0.2254335260115607
+The quintile score JR is: 4 --- actual score: 0.17341040462427745
+The quintile score JN is: 3 --- actual score: 0.11368015414258188
+The quintile score JW is: 2 --- actual score: 0.09248554913294797
+The quintile score JF is: 2 --- actual score: 0.0789980732177264
+The quintile score ilspersonnel is: 1 --- actual score: 0.02119460500963391
+
+++++++++++++++++++++++++++++++++
+calculate Involvement - TCI quintile: [0.33497536945812806, 0.270935960591133, 0.15763546798029557, 0.08374384236453201, 0.07881773399014778, 0.07389162561576355, 0.0]
+qt_thrs:  0.29655172413793107 0.14285714285714285 0.07980295566502463 0.044334975369458136 0.08374384236453201 0.11992485803947596
+The quintile score of LA is: 5 --- actual score: 0.33497536945812806
+The quintile score JR is: 4 --- actual score: 0.270935960591133
+The quintile score NE is: 4 --- actual score: 0.15763546798029557
+The quintile score JF is: 3 --- actual score: 0.08374384236453201
+The quintile score JN is: 2 --- actual score: 0.07881773399014778
+The quintile score JW is: 2 --- actual score: 0.07389162561576355
+The quintile score ilspersonnel is: 1 --- actual score: 0.0
+
+++++++++++++++++++++++++++++++++
+calculate Involvement - ALLOTP quintile
+qt_thrs:  0.2347457627118644 0.20338983050847456 0.1016949152542373 0.05338983050847458 0.11864406779661017 0.09100192558579197
+The quintile score of LA is: 5 --- actual score: 0.23728813559322035
+The quintile score JR is: 4 --- actual score: 0.2330508474576271
+The quintile score NE is: 4 --- actual score: 0.2245762711864407
+The quintile score JN is: 3 --- actual score: 0.11864406779661017
+The quintile score JW is: 2 --- actual score: 0.09745762711864407
+The quintile score JF is: 2 --- actual score: 0.08898305084745763
+The quintile score ilspersonnel is: 1 --- actual score: 0.0
+
+++++++++++++++++++++++++++++++++
+calculate Involvement - ASMI quintile
+qt_thrs:  0.2808641975308642 0.16234567901234565 0.09074074074074073 0.04197530864197531 0.09567901234567901 0.10847516722289999
+The quintile score of JR is: 5 --- actual score: 0.29012345679012347
+The quintile score LA is: 4 --- actual score: 0.27469135802469136
+The quintile score NE is: 4 --- actual score: 0.17901234567901234
+The quintile score JN is: 3 --- actual score: 0.09567901234567901
+The quintile score JW is: 2 --- actual score: 0.08950617283950617
+The quintile score JF is: 2 --- actual score: 0.06790123456790123
+The quintile score ilspersonnel is: 1 --- actual score: 0.0030864197530864196
+++++++++++++++++++++++++++++++++
+calculate Merged quintile
+qt_thrs:  0.2677741761232714 0.17617120563944097 0.0847410963415572 0.04825342720570408 0.09683380691467228 0.10488907180916862
+The quintile score of LA is: 5 --- actual score: 0.2913339356018269
+The quintile score JR is: 4 --- actual score: 0.25206766980423445
+The quintile score NE is: 4 --- actual score: 0.19600555532063316
+The quintile score JN is: 3 --- actual score: 0.09683380691467228
+The quintile score JW is: 2 --- actual score: 0.08171791869827844
+The quintile score JF is: 2 --- actual score: 0.07718490870781074
+The quintile score ilspersonnel is: 1 --- actual score: 0.004856204952544066
+***************
+Local topic: guy
+ID: 89
+Speaker: LI
+ref: -1
+
+TurnNo: 58
+---Subsequent Mentions---
+65
+65
+65
+66
+68
+69
+142
+144
+146
+149
+149
+155
+159
+161
+164
+168
+170
+171
+171
+173
+177
+179
+183
+185
+185
+185
+185
+187
+187
+189
+189
+190
+190
+190
+193
+194
+194
+194
+196
+198
+198
+202
+202
+202
+202
+203
+
+***************
+Local topic: natalie
+ID: 15
+Speaker: LI
+ref: -1
+
+TurnNo: 17
+---Subsequent Mentions---
+21
+75
+75
+77
+78
+79
+79
+84
+86
+87
+88
+89
+89
+89
+89
+91
+96
+101
+207
+210
+235
+235
+259
+260
+263
+264
+264
+275
+275
+279
+283
+286
+287
+287
+298
+302
+303
+303
+303
+303
+305
+306
+311
+339
+
+***************
+Local topic: jeremy
+ID: 16
+Speaker: LI
+ref: -1
+
+TurnNo: 17
+---Subsequent Mentions---
+26
+102
+104
+105
+105
+106
+106
+108
+108
+110
+110
+110
+111
+112
+112
+112
+119
+125
+137
+207
+211
+211
+
+***************
+Local topic: job
+ID: 74
+Speaker: LI
+ref: -1
+
+TurnNo: 48
+---Subsequent Mentions---
+106
+110
+120
+120
+121
+129
+191
+200
+202
+225
+246
+303
+363
+364
+372
+396
+
+***************
+Local topic: megan
+ID: 77
+Speaker: AY
+ref: -1
+
+TurnNo: 49
+---Subsequent Mentions---
+52
+53
+210
+220
+220
+221
+222
+223
+225
+226
+227
+227
+230
+231
+231
+232
+
+***************
+Local topic: people
+ID: 28
+Speaker: JD
+ref: -1
+
+TurnNo: 24
+---Subsequent Mentions---
+38
+38
+40
+63
+105
+113
+138
+174
+174
+181
+233
+234
+346
+396
+418
+450
+
+***************
+Local topic: experience
+ID: 17
+Speaker: JD
+ref: -1
+
+TurnNo: 19
+---Subsequent Mentions---
+29
+40
+70
+75
+82
+105
+108
+146
+177
+193
+
+***************
+Local topic: point
+ID: 51
+Speaker: JD
+ref: -1
+
+TurnNo: 34
+---Subsequent Mentions---
+46
+126
+184
+246
+248
+261
+262
+370
+
+***************
+Local topic: topic
+ID: 10
+Speaker: AY
+ref: -1
+
+TurnNo: 11
+---Subsequent Mentions---
+294
+294
+327
+328
+328
+340
+341
+353
+
+***************
+Local topic: time
+ID: 36
+Speaker: AY
+ref: -1
+
+TurnNo: 27
+---Subsequent Mentions---
+95
+105
+220
+294
+313
+316
+317
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+++++++++++++++++++++++++++++++++
+calculate Involvement - NPI quintile
+qt_thrs:  0.3052023121387283 0.20346820809248556 0.11213872832369942 0.04277456647398843 0.15895953757225434 0.12448117013544194
+The quintile score of LI is: 5 --- actual score: 0.3699421965317919
+The quintile score JE is: 4 --- actual score: 0.20809248554913296
+The quintile score JD is: 3 --- actual score: 0.2023121387283237
+The quintile score TY is: 3 --- actual score: 0.11560693641618497
+The quintile score AY is: 2 --- actual score: 0.09826589595375723
+The quintile score ilspersonnel is: 1 --- actual score: 0.005780346820809248
+
+++++++++++++++++++++++++++++++++
+calculate Involvement - TI quintile
+qt_thrs:  0.30406852248394 0.1635974304068523 0.13190578158458244 0.0569593147751606 0.14132762312633834 0.11090685275312996
+The quintile score of JD is: 5 --- actual score: 0.33832976445396146
+The quintile score LI is: 4 --- actual score: 0.25267665952890794
+The quintile score JE is: 3 --- actual score: 0.14132762312633834
+The quintile score AY is: 3 --- actual score: 0.14132762312633834
+The quintile score TY is: 2 --- actual score: 0.09421841541755889
+The quintile score ilspersonnel is: 1 --- actual score: 0.032119914346895075
+
+++++++++++++++++++++++++++++++++
+calculate Involvement - TCI quintile: [0.3497536945812808, 0.22660098522167488, 0.21674876847290642, 0.12315270935960591, 0.07881773399014778, 0.0049261083743842365]
+qt_thrs:  0.3004926108374384 0.2187192118226601 0.11428571428571428 0.03448275862068965 0.16995073891625617 0.12279422372588535
+The quintile score of LI is: 5 --- actual score: 0.3497536945812808
+The quintile score JD is: 4 --- actual score: 0.22660098522167488
+The quintile score JE is: 3 --- actual score: 0.21674876847290642
+The quintile score TY is: 3 --- actual score: 0.12315270935960591
+The quintile score AY is: 2 --- actual score: 0.07881773399014778
+The quintile score ilspersonnel is: 1 --- actual score: 0.0049261083743842365
+
+++++++++++++++++++++++++++++++++
+calculate Involvement - ALLOTP quintile
+qt_thrs:  0.2539130434782609 0.2234782608695652 0.15739130434782606 0.04434782608695652 0.19782608695652174 0.09697374254034456
+The quintile score of JE is: 5 --- actual score: 0.26956521739130435
+The quintile score JD is: 4 --- actual score: 0.23043478260869565
+The quintile score LI is: 3 --- actual score: 0.2217391304347826
+The quintile score TY is: 3 --- actual score: 0.17391304347826086
+The quintile score AY is: 2 --- actual score: 0.09130434782608696
+The quintile score ilspersonnel is: 1 --- actual score: 0.013043478260869565
+
+++++++++++++++++++++++++++++++++
+calculate Involvement - ASMI quintile
+qt_thrs:  0.2997014925373134 0.20298507462686569 0.12059701492537311 0.04179104477611939 0.16268656716417912 0.11611006625804825
+The quintile score of LI is: 5 --- actual score: 0.3402985074626866
+The quintile score JD is: 4 --- actual score: 0.23880597014925373
+The quintile score JE is: 3 --- actual score: 0.19402985074626866
+The quintile score TY is: 3 --- actual score: 0.13134328358208955
+The quintile score AY is: 2 --- actual score: 0.07761194029850746
+The quintile score ilspersonnel is: 1 --- actual score: 0.01791044776119403
+++++++++++++++++++++++++++++++++
+calculate Merged quintile
+qt_thrs:  0.2830479139176867 0.2142215768922285 0.12161060376838553 0.04783983876328528 0.1667998333539651 0.10685797440225106
+The quintile score of LI is: 5 --- actual score: 0.30688203770788997
+The quintile score JD is: 4 --- actual score: 0.24729672823238186
+The quintile score JE is: 3 --- actual score: 0.20595278905719017
+The quintile score TY is: 3 --- actual score: 0.12764687765074004
+The quintile score AY is: 2 --- actual score: 0.09746550823896756
+The quintile score ilspersonnel is: 1 --- actual score: 0.014756059112830431
+***************
+Local topic: penny
+ID: 40
+Speaker: NE
+ref: -1
+
+TurnNo: 27
+---Subsequent Mentions---
+28
+29
+30
+31
+39
+43
+48
+55
+55
+57
+60
+73
+77
+77
+81
+81
+81
+87
+87
+87
+90
+93
+93
+99
+105
+108
+111
+113
+174
+226
+
+***************
+Local topic: sandra
+ID: 66
+Speaker: DE
+ref: -1
+
+TurnNo: 40
+---Subsequent Mentions---
+43
+49
+50
+52
+55
+58
+61
+105
+108
+113
+115
+117
+174
+228
+229
+230
+233
+241
+
+***************
+Local topic: ra
+ID: 45
+Speaker: NE
+ref: -1
+
+TurnNo: 30
+---Subsequent Mentions---
+35
+72
+86
+92
+129
+154
+165
+166
+179
+180
+181
+215
+219
+219
+
+***************
+Local topic: ryan
+ID: 220
+Speaker: TY
+ref: -1
+
+TurnNo: 125
+---Subsequent Mentions---
+132
+143
+148
+161
+161
+172
+173
+174
+176
+178
+236
+
+***************
+Local topic: people
+ID: 65
+Speaker: EA
+ref: -1
+
+TurnNo: 39
+---Subsequent Mentions---
+77
+86
+87
+101
+103
+106
+168
+187
+188
+188
+
+***************
+Local topic: evan
+ID: 219
+Speaker: TY
+ref: -1
+
+TurnNo: 125
+---Subsequent Mentions---
+130
+131
+211
+234
+236
+250
+
+***************
+Local topic: junior
+ID: 326
+Speaker: NE
+ref: -1
+
+TurnNo: 178
+---Subsequent Mentions---
+179
+190
+191
+192
+203
+204
+
+***************
+Local topic: experience
+ID: 74
+Speaker: EA
+ref: -1
+
+TurnNo: 44
+---Subsequent Mentions---
+133
+161
+188
+196
+199
+
+***************
+Local topic: students
+ID: 291
+Speaker: TY
+ref: -1
+
+TurnNo: 163
+---Subsequent Mentions---
+164
+185
+196
+203
+
+***************
+Local topic: ras
+ID: 114
+Speaker: EA
+ref: -1
+
+TurnNo: 65
+---Subsequent Mentions---
+69
+149
+149
+160
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+++++++++++++++++++++++++++++++++
+calculate Involvement - NPI quintile
+qt_thrs:  0.19821428571428573 0.1732142857142857 0.15178571428571427 0.06964285714285716 0.15178571428571427 0.0703036417322483
+The quintile score of EA is: 5 --- actual score: 0.21428571428571427
+The quintile score JN is: 4 --- actual score: 0.1875
+The quintile score NE is: 4 --- actual score: 0.17857142857142858
+The quintile score DE is: 2 --- actual score: 0.15178571428571427
+The quintile score AY is: 2 --- actual score: 0.15178571428571427
+The quintile score TY is: 2 --- actual score: 0.11607142857142858
+The quintile score ilspersonnel is: 1 --- actual score: 0.0
+
+++++++++++++++++++++++++++++++++
+calculate Involvement - TI quintile
+qt_thrs:  0.20782918149466195 0.1409252669039146 0.13238434163701068 0.08469750889679716 0.13523131672597866 0.07068122663327153
+The quintile score of EA is: 5 --- actual score: 0.27402135231316727
+The quintile score NE is: 4 --- actual score: 0.16370106761565836
+The quintile score TY is: 4 --- actual score: 0.1423487544483986
+The quintile score AY is: 3 --- actual score: 0.13523131672597866
+The quintile score JN is: 2 --- actual score: 0.13167259786476868
+The quintile score DE is: 2 --- actual score: 0.11743772241992882
+The quintile score ilspersonnel is: 1 --- actual score: 0.03558718861209965
+
+++++++++++++++++++++++++++++++++
+calculate Involvement - TCI quintile: [0.211864406779661, 0.19491525423728814, 0.19491525423728814, 0.1864406779661017, 0.11016949152542373, 0.1016949152542373, 0.0]
+qt_thrs:  0.2016949152542373 0.19322033898305085 0.12542372881355934 0.06101694915254239 0.1864406779661017 0.07665137063758733
+The quintile score of NE is: 5 --- actual score: 0.211864406779661
+The quintile score JN is: 4 --- actual score: 0.19491525423728814
+The quintile score EA is: 4 --- actual score: 0.19491525423728814
+The quintile score TY is: 3 --- actual score: 0.1864406779661017
+The quintile score AY is: 2 --- actual score: 0.11016949152542373
+The quintile score DE is: 2 --- actual score: 0.1016949152542373
+The quintile score ilspersonnel is: 1 --- actual score: 0.0
+
+++++++++++++++++++++++++++++++++
+calculate Involvement - ALLOTP quintile
+qt_thrs:  0.20571428571428574 0.16857142857142857 0.13999999999999999 0.06285714285714286 0.15714285714285714 0.07659860924831148
+The quintile score of JN is: 5 --- actual score: 0.2571428571428571
+The quintile score EA is: 4 --- actual score: 0.17142857142857143
+The quintile score TY is: 4 --- actual score: 0.17142857142857143
+The quintile score AY is: 3 --- actual score: 0.15714285714285714
+The quintile score NE is: 2 --- actual score: 0.1357142857142857
+The quintile score DE is: 2 --- actual score: 0.1
+The quintile score ilspersonnel is: 1 --- actual score: 0.007142857142857143
+
+++++++++++++++++++++++++++++++++
+calculate Involvement - ASMI quintile
+qt_thrs:  0.19507389162561575 0.1625615763546798 0.15862068965517243 0.07093596059113302 0.1625615763546798 0.06410253299160307
+The quintile score of JN is: 5 --- actual score: 0.20689655172413793
+The quintile score EA is: 4 --- actual score: 0.18719211822660098
+The quintile score AY is: 3 --- actual score: 0.1625615763546798
+The quintile score NE is: 3 --- actual score: 0.1625615763546798
+The quintile score TY is: 2 --- actual score: 0.15763546798029557
+The quintile score DE is: 2 --- actual score: 0.10837438423645321
+The quintile score ilspersonnel is: 1 --- actual score: 0.014778325123152709
+++++++++++++++++++++++++++++++++
+calculate Merged quintile
+qt_thrs:  0.2007227121555936 0.167343038421506 0.1456595489813364 0.0741157980138088 0.1547849800789592 0.06578391034054883
+The quintile score of EA is: 5 --- actual score: 0.2083686020982684
+The quintile score JN is: 4 --- actual score: 0.1956254521938104
+The quintile score NE is: 4 --- actual score: 0.1704825530071427
+The quintile score TY is: 3 --- actual score: 0.1547849800789592
+The quintile score AY is: 2 --- actual score: 0.1433781912069307
+The quintile score DE is: 2 --- actual score: 0.11585854723926672
+The quintile score ilspersonnel is: 1 --- actual score: 0.0115016741756219
